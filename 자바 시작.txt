@@ -27,10 +27,31 @@ git : 리눅스 운영체제를 만든 리눅스 토발즈가 만든 프로그�
 			https://www.toptal.com/developers/gitignore //파일 작성 편하게 도와줌
 
 
-
 1. git 설치
 2. github 회원가입
 
+git init
+gitignore 작성
+git add 관리할 파일들
+git commit -m "ch1프로젝트 작성"
+git push -u origin main
+
+
+git add Remote 선택
+github 주소 붙여넣기
+origin
+vs code Publish Branch 클릭
+
+
+컴파일러(자바) - 인터프리터(파이썬)
+
+
+
+자바 기본단위 => 클래스 (class)
+ch1 => 패키지 (관련있는 클래스들 모음)
+main = 메소드 // 이름 () => 메소드
+
+//클래스 이름은 대문자로 시작
 
 
 
@@ -40,3 +61,32 @@ git : 리눅스 운영체제를 만든 리눅스 토발즈가 만든 프로그�
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ctrl + shift + p
+shift + Alt + 아래키 : 지금 코드 복사

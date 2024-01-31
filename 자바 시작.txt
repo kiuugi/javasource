@@ -44,7 +44,7 @@ vs code Publish Branch 클릭
 
 
 컴파일러(자바) - 인터프리터(파이썬)
-
+객체지향언어(자바)
 
 
 자바 기본단위 => 클래스 (class)
@@ -53,11 +53,76 @@ main = 메소드 // 이름 () => 메소드
 
 //클래스 이름은 대문자로 시작
 
+타입(자료형) 변수명(소문자로 시작/두 개의 단어가 합해진 변수명은 두번째 단어 시작을 대문자로 함) // DB에서는 단어_단어 // 변수 이름은 중복 불가능
+1. 정수형 - byte(1byte), short(2byte), int(4byte), long(8byte)
+   기본적으로 int
+
+2. 문자형 - char(2byte)
+   문자를 표현할때 '' 사용
+   문자(한 글자) - 문자열(한글자이상)
+   문자는'' 사용, 문자열은 " " 사용
+   char var1 = '\u0041'; // 아스키코드의 65번에 해당하는 대문자 A
+   char var2 = 44032;
+   문자에는 코드값이 정의 되어 있음 = 유니코드, 아스키코드, UTF-8
+   A = 65, a = 97, 0 = 48 영어는 26
+   char name1 = "Ja"; 타입 미스매칭 
+   String name2 = "Ja"; // 문자열에서는 String "" 사용
+
+
+3. 논리형 - boolean (true, false 값만 가짐)
+
+4. 실수형 - float(4byte), double(8byte)
+float 소수점 9자리에서 반올림
+double 정밀도가 더 높음
+
+자바 코드(src폴더) => 컴파일링 => bin(바이너리)파일의 .class로 저장됨
+
+ 특수문자
+   탭 == \t, 엔터 == \n
+   "" == " \" \" "
+   '' == " \' \' "
+
+ 변수의 유효 범위
+ local(지역) 변수 {} : {}블럭 안에서만 유효함 / 초기화를 하고 사용함
+ 변수 선언 => 값을 할당(초기화)
+
+ 자동 형(타입)변환
+ 정수형 / 문자형 / 실수형 / 논리형
+ 타입 변환이 가능함 : 작은 타입에서 => 큰 타입으로 (byte기준) ,동일한 4byte 지만 float타입이 int 보다 더 정밀한 수를 표현함.
 
 
 
 
 
+
+
+ printf 지시자  enter 개념이 안들어있음.
+ %d : 10진 정수 형태로 출력
+ %b : boolean 형태로 출력
+ %c : char 형태로 출력
+ %s : String(문자열) 형태로 출력
+ %f : 부동소수점(float, double) 형태로 출력
+ %숫자 : 총 자릿수 / @ 오른쪽 정렬 출력 / 0@ 없는 자리는 0으로 채워서
+
+
+자바 예약어
+기본 데이터 타입 boolean, byte, char, short, int, long, float, double
+
+접근 지정자 Private, protected, public
+
+클래스와 관련된 것 class, abstract, interface, extends, implements, enum
+
+객체와 관련된 것 new, instanceof, this, super, null
+
+메소드와 관련된 것 void, return
+
+제어문과 관련된 것 if, else, switch, case, default, for, do, while, break, continue
+
+논리값 true, false
+
+예외 처리와 관련된 것 try, catch, finally, throw, throws
+
+기타 transient, volatile, package, import, synchronized, native, final, static, strictfp, assert
 
 
 

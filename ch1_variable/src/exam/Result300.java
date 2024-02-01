@@ -4,9 +4,12 @@ public class Result300 {
 
   public static void main(String[] args) {
     int value = 356;
-
     //출력 결과가 300이 나올 수 있도록 산술 연산 기호 사용
-    System.out.printf("value = %d", (value / 300) * 300);
+    int i = value / 300;
+    int x = i * 300;
+    System.out.println(x);
+    System.out.println(value / 300 * 300);
+    System.out.printf("value = %d\n", (value / 300 * 300)); //printf 쓸때 꼭 줄바꿈 해주자...
 
     int num = 24;
     // 변수 num 의 값보다 크면서도 가장 가까운 10의 배수에서 변수 num 의 값을 나머지를 구하시오.

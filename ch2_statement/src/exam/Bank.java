@@ -26,7 +26,10 @@ public class Bank {
         case 2: //2 출금액 입력, 잔액 = 잔액 - 출금액
           System.out.print("출금할 금액 입력 :");
           int out = sc.nextInt();
-          if (i < out) break;
+          if (i < out) {
+            System.out.println("잔액이 부족합니다.");
+            break;
+          }
           i -= out;
           System.out.println("출금액 : " + out + ", 잔액 : " + i);
           break;
@@ -36,6 +39,9 @@ public class Bank {
         case 4:
           System.out.println("프로그램 종료");
           run = false;
+          break;
+        default:
+          System.out.println("잘못된 입력");
           break;
       }
     }

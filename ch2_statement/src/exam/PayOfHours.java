@@ -18,7 +18,9 @@ public class PayOfHours {
 
     if (num > 8) {
       System.out.println(
-        "오늘 받는 임금은 " + (((num - 8) * 9800) * 1.5) + "입니다."
+        "오늘 받는 임금은 " +
+        ((((num - 8) * 9800) * 1.5) + (8 * 9800)) +
+        "입니다."
       );
     } else {
       System.out.println("오늘 받는 임금은 " + num * 9800 + "입니다.");

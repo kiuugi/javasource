@@ -1,5 +1,6 @@
 package array;
 
+// 자바에서는 같은 타입만 배열에 들어갈 수 있음.
 public class ArrayEx1 {
 
   public static void main(String[] args) {

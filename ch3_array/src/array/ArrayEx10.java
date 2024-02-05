@@ -2,13 +2,19 @@ package array;
 
 import java.util.Arrays;
 
-//정렬
+// 정렬
+// 알고리즘 - 정렬
+//           선택정렬, 버블정렬
 
 public class ArrayEx10 {
 
   public static void main(String[] args) {
     int arr[] = { 25, 85, 55, 65, 5, 3 };
     int temp = 0;
+
+    // 자바가 제공하는 sort 방법
+    Arrays.sort(arr); // 오름차순 sort
+    System.out.println(Arrays.toString(arr));
 
     for (int i = 0; i < arr.length; i++) {
       for (int j = 0; j < arr.length; j++) {

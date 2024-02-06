@@ -14,12 +14,19 @@ public class StudentEx2 {
 
     // 주소 변경
     obj.changeAddr("서울시 중남구");
+    obj.setAddr("서울시 중남구"); // 같은코드임
     // 핸드폰 변경
     obj.changeHp("010-9876-5432");
+    obj.setHp("010-9876-5432"); // 같은코드임222
     // 변경 확인
     System.out.println(obj);
 
     Student2 obj2 = new Student2(); // new : 생성자 사용 // 생성자는 멤버변수를 초기화한다.
+    System.out.println(obj2);
+    obj2.setAddr("경기도 성남시");
+    obj2.setId("20247890");
+    obj2.setName("박지성");
+    obj2.setHp("010-7890-1234");
     System.out.println(obj2);
 
     Student2 obj3 = new Student2("20245812", "김진수", "경기도 수원시");

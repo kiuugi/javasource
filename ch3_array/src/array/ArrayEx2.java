@@ -26,8 +26,11 @@ public class ArrayEx2 {
 
     System.out.println();
     //배열의 순서대로 ()변수i 에 대입
-    for (int i : score) {
+    for (int i : score) {  // for (int i = 0; i < score.length; i++) 
       System.out.println(i);
     }
+    
+      
+   
   }
 }

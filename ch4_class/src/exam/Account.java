@@ -22,17 +22,45 @@ public class Account {
 
   // 출금하다 withdraw
   int withdraw(int amount) {
+    if (balance < amount) {
+      System.out.println("잔액이 부족합니다.");
+      return balance;
+    }
     return balance -= amount;
+  }
+
+  public String getAccountNum() {
+    return accountNum;
+  }
+
+  public void setAccountNum(String accountNum) {
+    this.accountNum = accountNum;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public int getBalance() {
+    return balance;
+  }
+
+  public void setBalance(int balance) {
+    this.balance = balance;
   }
 
   @Override
   public String toString() {
     return (
-      "Account [accountNum=" +
+      "Account [계좌번호 = " +
       accountNum +
-      ", name=" +
+      ", 이름 = " +
       name +
-      ", balance=" +
+      ", 잔액 = " +
       balance +
       "]"
     );

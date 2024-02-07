@@ -21,6 +21,6 @@ public class DataEx {
   }
 
   static void change2(Data obj) { // 참조형 // 클래스 이름으로 데이터가 저장된 주소를 가르킴.
-    obj.x = 20; //
+    obj.x = 20; // 주소가 넘어감(주소를 공유)
   }
 }

@@ -1,5 +1,6 @@
 package ch4;
 
+// Singletion 패턴 : 단 하나의 객체를 생성
 public class Singleton {
 
   private static Singleton singleton;
@@ -10,6 +11,6 @@ public class Singleton {
     if (singleton == null) {
       singleton = new Singleton();
     }
-    return singleton;
+    return singleton; // null이 아니라면 이미 생성되어있는 객체를 줌
   }
 }

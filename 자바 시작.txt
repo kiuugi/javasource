@@ -193,11 +193,16 @@ Exception (예외)
 
 
 
+java.lang.* => 기본 패키지(import 구문 없이 사용가능)
 
 
 
 
-
+ for (Product product : carts) {
+      
+    } == for (int i = 0; i < carts.length; i++) {
+      prouct = carts[i];
+    }
 
 ctrl + shift + p
 shift + Alt + 아래키 : 지금 코드 복사

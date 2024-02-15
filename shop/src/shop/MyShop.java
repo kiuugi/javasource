@@ -166,27 +166,35 @@ public class MyShop implements IShop {
 //선생님이 짜신 코드
 // int i = 0, total = 0;
 // for (Product product : carts) {
-//   if (product != null) {
-//     System.out.printf(
-//       "[%d] %s %d\n",
-//       i,
-//       product.getPname(),
-//       product.getPrice()
-//     );
-//     total += product.getPrice();
-//   }
-// }
-// System.out.println("===============");
-// System.out.println("합계 : " + total);
-// System.out.println("결제방법 : " + customers[customerNo].getPayType());
-// System.out.println("[p] 이전 화면");
-// System.out.println("[q] 결제");
-// String meun = sc.nextLine();
-// switch (meun) {
-//   case "p":
-//     productList();
-//     break;
-//   case "q":
-//     System.out.println("결제가 완료 되었습니다.");
-//     System.exit(total);
-//     break;
+  //   if (product != null) {
+    //     System.out.printf(
+      //       "[%d] %s %d\n",
+      //       i,
+      //       product.getPname(),
+      //       product.getPrice()
+      //     );
+      //     total += product.getPrice();
+      //   }
+      // }
+      // System.out.println("===============");
+      // System.out.println("합계 : " + total);
+      // System.out.println("결제방법 : " + customers[customerNo].getPayType());
+      // System.out.println("[p] 이전 화면");
+      // System.out.println("[q] 결제");
+      // String meun = sc.nextLine();
+      // switch (meun) {
+        //   case "p":
+        //     productList();
+        //     break;
+        //   case "q":
+        //     System.out.println("결제가 완료 되었습니다.");
+        //     System.exit(total);
+        //     break;
+        
+        
+        // for (Product product : carts) {
+          
+        // } == for (int i = 0; i < carts.length; i++) {
+        //   prouct = carts[i];
+        // }
+

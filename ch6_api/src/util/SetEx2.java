@@ -1,5 +1,7 @@
 package util;
 
+import static java.lang.Math.random;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashSet;
@@ -14,10 +16,16 @@ public class SetEx2 {
     // 1~45 사이의 숫자를 임의로 생성
 
     for (int i = 0; set.size() < 6; i++) { // 조건을 set.size() 로 잡아서 중복이 나와서 숫자를 저장 못하면 size()가 6이 될때까지 반복시킴
-      int num = (int) (Math.random() * 45) + 1;
+      int num = (int) (Math.random() * 45) + 1; // 그리고 i 변수가 필요 없기 때문에 while 구문을 사용하면 약간 더 간소화됨
       set.add(num);
     }
     System.out.println(set);
+
+    // while (set.size() < 6) {
+    //     int num = (int) (Math.random() * 45) + 1;
+    //     set.add(num);
+    // }
+
     // set ==> List
     List<Integer> list = new ArrayList<>(set);
     list.sort(Comparator.naturalOrder());

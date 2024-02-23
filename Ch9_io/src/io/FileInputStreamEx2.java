@@ -42,8 +42,8 @@ public class FileInputStreamEx2 {
 
     // try - with - resources : try() 닫아야 할 자원들을 선언하면 자동으로 닫아줌
     try (
-      InputStream in = new FileInputStream(new File("c:\\temp\\file1.txt"));
-      OutputStream out = new FileOutputStream("c:\\temp\\file1_copy.txt");
+      InputStream in = new FileInputStream(new File("c:\\temp\\file1.txt")); // 이 파일 안에들어있는걸 읽어오겠다
+      OutputStream out = new FileOutputStream("c:\\temp\\file1_copy.txt"); // 이 파일 안에다 읽은것을 쓰겠다. 적을것은 out.write(여기 들어있는 데이터를 적겠다.)
     ) {
       int data = 0;
       byte[] b = new byte[1024];

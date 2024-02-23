@@ -27,11 +27,11 @@ public class IOEx {
         System.out.print(">> ");
         str = sc.nextLine();
 
-        if (!str.equalsIgnoreCase("q")) {
+        if (!str.equalsIgnoreCase("q")) { // 대소문자 관계없이 q가 아니라면 실행 // 대문자 Q 를 쓰면 밑에 구문은 실행하지 않지만  while 조건에는 안걸려서 계속함.
           bfw.write(str);
           bfw.newLine();
         }
-      } while (!str.equals("q"));
+      } while (!str.equals("q")); // 소문자 q 라면 중지
     } catch (Exception e) {
       e.printStackTrace();
     }

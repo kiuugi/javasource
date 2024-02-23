@@ -18,7 +18,7 @@ public class LocalDateEx2 {
 
     System.out.println(today); // 2024-02-22
     System.out.println(now); // 15:01:20.782321200
-    System.out.println("윤년 / 평년 : " + today.isLeapYear());
+    System.out.println("윤년 / 평년 : " + today.isLeapYear()); // 평년 true
 
     // 특정 날짜 지정
     LocalDate birth = LocalDate.of(1950, 11, 23);
